@@ -84,7 +84,7 @@ func probeSystemResourceUsage(c http.FortiHTTP, _ *TargetMetadata) ([]prometheus
 	return m, true
 }
 
-func probeSystemVDOMResources(c http.FortiHTTP, _ *TargetMetadata) ([]prometheus.Metric, bool) {
+func probeSystemResourceUsagePerVdom(c http.FortiHTTP, _ *TargetMetadata) ([]prometheus.Metric, bool) {
 	var (
 		mResCPU = prometheus.NewDesc(
 			"fortigate_vdom_cpu_usage_ratio",
