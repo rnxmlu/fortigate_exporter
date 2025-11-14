@@ -55,6 +55,21 @@ Global:
    * `fortigate_cpu_usage_ratio`
    * `fortigate_memory_usage_ratio`
    * `fortigate_current_sessions`
+ * _System/Performance/status/_
+   * `fortigate_system_performance_status_cpu_cores_idle_ratio`
+   * `fortigate_system_performance_status_cpu_cores_iowait_ratio`
+   * `fortigate_system_performance_status_cpu_cores_nice_ratio`
+   * `fortigate_system_performance_status_cpu_cores_system_ratio`
+   * `fortigate_system_performance_status_cpu_cores_user_ratio`
+   * `fortigate_system_performance_status_cpu_idle_ratio`
+   * `fortigate_system_performance_status_cpu_iowait_ratio`
+   * `fortigate_system_performance_status_cpu_nice_ratio`
+   * `fortigate_system_performance_status_cpu_system_ratio`
+   * `fortigate_system_performance_status_cpu_user_ratio`
+   * `fortigate_system_performance_status_mem_free_bytes`
+   * `fortigate_system_performance_status_mem_freeable_bytes`
+   * `fortigate_system_performance_status_mem_bytes_total`
+   * `fortigate_system_performance_status_mem_used_bytes`
  * _System/HAChecksums_
    * `fortigate_ha_member_has_role`
  * _System/Ntp/Status_
@@ -449,6 +464,7 @@ To improve security, limit permissions to required ones only (least privilege pr
 |System/Interface             | netgrp.cfg         |api/v2/monitor/system/interface/select |
 |System/Interface/Transceivers| *any*              |api/v2/monitor/system/interface/transceivers |
 |System/LinkMonitor           | sysgrp.cfg         |api/v2/monitor/system/link-monitor |
+|System/Performance/Status    | sysgrp.cfg         |api/v2/monitor/system/performance/status |
 |System/Ntp/Status            | netgrp.cfg         |api/v2/monitor/system/ntp/status |
 |System/Resource/Usage        | sysgrp.cfg         |api/v2/monitor/system/resource/usage |
 |System/Resource/Usage/VDOM   | sysgrp.cfg         |api/v2/monitor/system/resource/usage |
